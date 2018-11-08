@@ -1,0 +1,125 @@
+html body {
+  height: 100%;
+}
+
+body {
+
+}
+
+ul {
+  float: left;
+  list-style-type: none;
+}
+
+.logo {
+  margin: auto;
+}
+
+
+.discography img{
+  margin-left: 200px;
+  margin-top: -450px;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: green;
+  }
+}
+
+.line{
+  z-index: 1000;
+  top: 180px;
+  position:absolute;
+}
+
+.planet01 {
+  width: 100%;
+  height: auto;
+  background-img: url("./assets/images/planet01.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  animation-name: example； animation-duration:4s;
+  animation-iteration-count: infinites;
+}
+
+.planet02 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.planet03 {
+  /*width: 120px;*/
+  /*height: 120px;*/
+  background: red;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.planet04 {
+/*  margin-left: 150px;
+  margin-top: -300px;*/
+  background-repeat: no-repeat;
+  position: relative;
+  /*position: fixed;*/
+  /*    bottom: 0;
+    left: 0;*/
+  width: 300px;
+  /*border: 0px solid #;*/
+}
+
+.avatar {
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  /*box-sizing: border-box;*/
+  /*border: 5px white solid;*/
+  border-radius: 50% overflow: hidden;
+  box-shadow: rgba(o, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.timeline {
+  margin-right: 160px;
+  text-align: center;
+}
+
+.social_media_icon {
+  float: right;
+  margin-right: 160px;
+  position: relative;
+}
+.social_media_icon li {
+  list-style-type: none;
+  display: inline-block;
+}
+.icon{
+  padding-right: 10px;
+}
+.player{
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+}

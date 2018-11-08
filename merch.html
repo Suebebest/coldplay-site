@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Merch | ColdPlay</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+  body {
+    /*background-image: url("./assets/images/merch_background.png");*/
+    /*background-size: 100%;*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+  }
+
+.items{
+  position: absolute;
+  margin-left: 380px;
+}
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    display: none;
+  }
+
+  .column img {
+    max-width: 160px;
+    max-height: 160px;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="logo center-block">
+        <img src="./assets/images/logo.svg" alt="logo" class="logo" align="center">
+      </div>
+      </div>
+      <div class="line"><img src="assets/images/line.png" alt=""></div>
+        <div align="justify">
+          <ul>
+            <li><a href="index.html"><img src="./assets/images/icon01.svg" alt="icon01" ></a></li>
+            <li><a href="about.html"><img src="./assets/images/icon02.svg" alt="icon02" ></a></li>
+            <li><a href="discography.html"><img src="./assets/images/icon03.svg" alt="icon03" ></a></li>
+            <li><a href="media.html"><img src="./assets/images/icon04.svg" alt="icon04" ></a></li>
+            <li><a href="merch.html"><img src="./assets/images/icon05.svg" alt="icon05" ></a></li>
+            <li><a href="tour.html"><img src="./assets/images/icon06.svg" alt="icon06" ></a></li>
+            <li><a href="music.html"><img src="./assets/images/icon07.svg" alt="icon07" ></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center-block">
+        <div id="filter_btn">
+          <button class="btn active" onclick="filterSelection('all')"> All</button>
+          <button class="btn" onclick="filterSelection('clothes')"> Clothes</button>
+          <button class="btn" onclick="filterSelection('cup')"> Cup</button>
+          <button class="btn" onclick="filterSelection('case')"> Case</button>
+        </div>
+        <br>
+        <div class="container items">
+        <div class="row">
+        <div class="column clothes">
+          <div class="content">
+            <img src="assets/images/merchant/01.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column clothes">
+          <div class="content">
+            <img src="assets/images/merchant/05.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column clothes">
+          <div class="content">
+            <img src="assets/images/merchant/06.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="column cup">
+          <div class="content">
+            <img src="assets/images/merchant/03.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column cup">
+          <div class="content">
+            <img src="assets/images/merchant/04.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column cup">
+          <div class="content">
+            <img src="assets/images/merchant/07.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="column case">
+          <div class="content">
+            <img src="assets/images/merchant/02.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column case">
+          <div class="content">
+            <img src="assets/images/merchant/08.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        <div class="column case">
+          <div class="content">
+            <img src="assets/images/merchant/09.png" alt="">
+            <h4>Clothes</h4>
+            <p>$9999.99</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- end of item container -->
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script>
+  filterSelection("all")
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("filter_btn");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+</body>
+
+</html>
